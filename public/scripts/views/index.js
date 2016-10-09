@@ -13,11 +13,22 @@ function bindEventHandlers() {
 				intercurrence: $("#intercurrence").val()
 			}
 		}).done(function(msg) {
-			$("#classification").html(msg);
+			var isSerious = msg.top_class === "serious";
+			if(isSerious) {
+				$("#notifyDocModal").modal();
+			}
+			else {
+				$("#sucessNote").fadeIn({
+					complete: function() {
+						$(this).fadeOut(5000);
+					}
+				});
+			}
 		}).fail(function(jqXHR, textStatus) {
 			$("#classification").html("Registration failed: " + textStatus + "   " + JSON.stringify(jqXHR));
 		});
 	});
+		
 }
 
 init();

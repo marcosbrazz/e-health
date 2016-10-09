@@ -7,4 +7,4 @@ applications:
   host: e-health
   disk_quota: 1024M
   services:
-  - e-health-cloudantNoSQLDB
+  - e-health-database

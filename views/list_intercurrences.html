@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>E-Health</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="stylesheet" href="/style/vendor/bootstrap/sb-admin-2.css" />
+	<link rel="stylesheet" href="/style/vendor/bootstrap/bootstrap.css" />
+	<link rel="stylesheet" href="/style/vendor/font-awesome/font-awesome.css" />
+	
+	<link rel="stylesheet" href="/style/vendor/bootstrap/dataTables.bootstrap.css" />
+	<link rel="stylesheet" href="/style/vendor/datatables-responsive/dataTables.responsive.css" />
+	
+	<link rel="stylesheet" href="/style/views/list_intercurrences.css" />
+	
+</head>
+<body>
+	<div id="wrapper">
+
+		<!-- Navigation -->
+		<nav class="navbar navbar-default navbar-static-top" role="navigation"
+			style="margin-bottom: 0">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">E-Health</a>
+			</div>
+		</nav>
+		<div id="userMsg"></div>
+		<div id="page-wrapper" style="min-height: 414px;">
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="panel panel-default" style="margin-top: 15px;">
+						<div class="panel-heading">Patient: </div>
+						<div class="panel-body">
+                            <table width="100%" class="table table-striped table-bordered table-hover" id="intercurrences-table">
+                                <thead>
+                                    <tr>
+                                    	<th>Patient</th>
+                                        <th>Time Occur</th>
+                                        <th>Intercurrence</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                	<tr>
+	                                	<td></td>
+	                                	<td></td>
+	                                	<td></td>
+	                                </tr>
+	                                <tr>
+	                                	<td></td>
+	                                	<td></td>
+	                                	<td></td>
+	                                </tr>
+                                </tbody>
+                            </table>                            
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- jQuery -->
+	<script type="text/javascript" src="/scripts/vendor/jquery/jquery.min.js"></script>
+	
+	<!-- Bootstrap Core JavaScript -->
+	<script src="/scripts/vendor/bootstrap/bootstrap.min.js"></script>
+	
+	<!-- DataTables JavaScript -->
+	<script src="/scripts/vendor/jquery/jquery.dataTables.min.js"></script>
+    <script src="/scripts/vendor/bootstrap/dataTables.bootstrap.min.js"></script>
+    <script src="/scripts/vendor/datatables-responsive/dataTables.responsive.js"></script>
+    
+    <script src="/scripts/vendor/moment/moment.min.js"></script>
+    
+    
+    <!-- View Script -->
+	<script type="text/javascript" src="/scripts/views/listIntercurrence.js"></script>
+</body>
+</html>
