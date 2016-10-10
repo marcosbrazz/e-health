@@ -5,9 +5,6 @@
 It is a responsive (web and mobile) application developed to help the post surgical of patients submitted to bariatric surgery 
 
 
-## Motivation
-
-
 ### The Problem
 
 The obesity grows fast around the world, according to ABESO - Associação Brasileira
@@ -51,6 +48,7 @@ The next, we have two environment configuration profiles. The first is intended 
 IMPORTANT: Independent on the profile choice, keep in mind that it will need access to the Bluemix cloud in order consume the Watson and database services.
 
 ### Running Application on IBM® Bluemix®
+
 
 #### Create the runtime.
 
@@ -154,7 +152,7 @@ Re-deploy the application in the Node JS server.
 
 #### Ready to use.
 
-Now the application E-Health is ready to use. Follow the instructions on section "Using" to know how to use the application.
+Now the application E-Health is DTOready to use. Follow the instructions on section "Using" to know how to use the application.
 
 ## Using
 	
