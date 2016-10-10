@@ -1,16 +1,22 @@
 
 function init() {
 	bindEventHandlers();
+	loadMenu();
 }
 
 function bindEventHandlers() {
 	$("#register").click(function() {
+		var interText = $("#intercurrence").val();
+		if(!interText || interText == '') {
+			interText = $("#intercurrence").attr("placeholder");
+		}
+		
 		$.ajax({
 			method: 'POST',
 			url: '/api/intercurrence',
 			async: true,
 			data: {
-				intercurrence: $("#intercurrence").val()
+				intercurrence: interText
 			}
 		}).done(function(msg) {
 			var isSerious = msg.top_class === "serious";
@@ -28,7 +34,15 @@ function bindEventHandlers() {
 			$("#classification").html("Registration failed: " + textStatus + "   " + JSON.stringify(jqXHR));
 		});
 	});
+	
+	$("#clean").click(function() {
+		$("#intercurrence").val('');
+	});
 		
+}
+
+function loadMenu() {
+	$('#menu').load('/menu');
 }
 
 init();

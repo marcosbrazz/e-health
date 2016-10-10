@@ -1,5 +1,6 @@
 function init() {
 	loadIntercurrences();
+	loadMenu();
 }
 
 function formatDate(d) {
@@ -31,5 +32,9 @@ function loadIntercurrences() {
     });
 		
 } 
+
+function loadMenu() {
+	$('#menu').load('/menu');
+}
 
 init();

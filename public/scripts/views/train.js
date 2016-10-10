@@ -1,5 +1,6 @@
 function init() {
 	bindEventHandlers();
+	loadMenu();
 }
 
 
@@ -15,6 +16,10 @@ function bindEventHandlers() {
 			$("#trainingResult").html("Training failed: " + textStatus + "   " + JSON.stringify(jqXHR));
 		});
 	});
+}
+
+function loadMenu() {
+	$('#menu').load('/menu');
 }
 
 init();

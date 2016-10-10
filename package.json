@@ -12,7 +12,6 @@
     "body-parser": "1.14.x",
     "method-override": "2.3.x",
     "errorhandler": "1.4.x",
-    "connect-multiparty": "2.0.x",
     "watson-developer-cloud" : "2.4.6",	
     "winston" : "2.2.0"
   },
